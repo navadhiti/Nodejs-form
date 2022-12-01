@@ -11,34 +11,18 @@
 </head>
 <body>
     {{!-- Navigation links --}}
-    <nav>
-        <h4>Node MySQL Login</h4>
+   <nav>
+        <h4>ISOP</h4>
         <ul>
-            <li><a href="/">Home</a></li>
+            <li><a href="/home">Home</a></li>
             <li><a href="/login">Login</a></li>
-            <li><a href="/register">Register</a></li>
         </ul>
     </nav>
 
     {{!-- Body --}}
     <div class="container mt-4">
-        <div class="card" style="width: 18rem;">            
-            <div class="card-header">Login Form</div>    
-            <div class="card-body">
-                <form>
-                    <div class="mb-3">
-                        <label for="name-lgn" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name-lgn" name="name">                        
-                    </div>                    
-                    <div class="mb-3">
-                        <label for="password-lgn" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password-lgn" name="password">
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
-        </div>
+       
+                    <a href="https://insp.memberclicks.net/oauth/v1/authorize?response_type=code&client_id=4yIH0JUMt4PzVHj1eMLj&scope=read&state=8d152e78-3df5-11e6-ac61-9e71128cae77&redirect_uri=https://dev.isop.navadhiti.com"><button class="btn btn-primary">Signin</button></a>
     </div>
 </body>
 </html>
