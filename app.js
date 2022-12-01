@@ -45,7 +45,7 @@ app.get("/", (req, res) => {
         'method': 'POST',
         'url': `https://insp.memberclicks.net/oauth/v1/token?grant_type=authorization_code&code=${req.query.code}&scope=read&redirect_uri=https://dev.isop.navadhiti.com`,
         'headers': {
-          'Authorization': 'Basic NHlJSDBKVU10NFB6VkhqMWVNTGo6Y2JhZTcxOGI1YmYwNDdmN2EzODE2OTAxNzkzNGFlZDE=',
+          'Authorization': 'Basic',
           'Content-Type': 'application/x-www-form-urlencoded',
           'Cache-Control': 'no-cache',
           'Cookie': 'SESSION=MDFhZDBjYTAtZTc4Mi00NjdkLWEzY2EtZmFlZjg3MmZhZTUz; __cfruid=d9b3c5d9a5a7ae46e02a9c4a70ad8e09c343fb36-1669903335'
