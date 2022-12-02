@@ -5,6 +5,7 @@ const dotenv = require('dotenv')
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcryptjs")
 const request = require('request');
+var jwt = require('jsonwebtoken');
 
 dotenv.config({ path: './.env'})
 
@@ -54,8 +55,10 @@ app.get("/", (req, res) => {
       request(options, function (error, response) {
         if (error) throw new Error(error);
         console.log(response.body);
-        res.send(JSON.stringify(response.body));
-      });
+        var token = jwt.sign({ accesstoken: response.body.accessToken, appSecret: '2cf9d0136af4f0f413c298d09aa1bd99' }, 'hs256');
+        res.send(token)
+        // res.send(JSON.stringify(response.body));
+      })
 })
 
 app.listen(8001, ()=> {
